@@ -2,6 +2,14 @@ load("@bazel_tools//tools/build_defs/repo:jvm.bzl", "jvm_maven_import_external")
 
 def robolectric_repositories():
     jvm_maven_import_external(
+        name = "org_robolectric_android_all_Q_robolectric_5415296",
+        artifact = "org.robolectric:android-all:Q-robolectric-5415296",
+        server_urls = ["https://repo1.maven.org/maven2", "https://jcenter.bintray.com"],
+        artifact_sha256 = "f2d20c324b931a5ad261b59cbc3a7e2c480fcc8f18fd6cdae173450adc347506",
+        licenses = ["notice"]
+    )
+    
+    jvm_maven_import_external(
         name = "org_robolectric_android_all_10_robolectric_5803371",
         artifact = "org.robolectric:android-all:10-robolectric-5803371",
         server_urls = ["https://repo1.maven.org/maven2", "https://jcenter.bintray.com"],
